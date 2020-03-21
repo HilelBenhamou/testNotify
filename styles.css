@@ -1,0 +1,96 @@
+
+html, body {
+	height: 1000px;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+.logoContainer{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.image{
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 1px 1px 30px 5px blue;
+}
+.content{
+	display: flex;
+	justify-content: space-around;
+}
+
+.mapArticleContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	align-items:center; 
+}
+#map {
+	width: 70%;
+	height: 500px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 30px 5px red;
+}
+.articles{
+	display:flex;
+	justify-content: space-around;
+	width: 70%;
+	margin-bottom: 10px;
+	padding: 10px;
+	height: 150px;
+	border-radius: 4px;
+	border: 2px solid white;
+	box-shadow: 1px 1px 30px 5px yellow;
+}
+.ps{
+	color:white;
+}
+
+
+.pictures{
+	width: 150px;
+	height: 150px;
+	margin-right: 10px;
+}
+
+.floater{
+	position: fixed;
+	background-color: white;
+	box-shadow: 1px 1px 30px 5px red;
+	right: 20px;
+	width: 150px;
+	height: 500px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+.footer{
+	display: none;
+}
+
+@media (max-width: 1150px) {
+	.content{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.floater{
+		display: none;
+	}
+	.footer{
+		display: inline;
+		background-color: white;
+		box-shadow: 1px 1px 30px 5px red;
+		width: 72%;
+		height: 150px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		}
+	p{
+		overflow: scroll;
+	}
+}
